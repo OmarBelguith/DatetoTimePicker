@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.lab3.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/vertLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/swDate"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:lineSpacingExtra="8sp"
+                android:text="Date Picker"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textSize="18sp" />
+
+            <Button
+                style="@android:style/Widget.Button.Toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.25"
+                android:background="@color/colorAccent"
+                android:elevation="0dp"
+                android:onClick="togglePicker"
+                android:text="Toggle"
+                android:textColor="@android:color/background_dark"
+                android:textStyle="bold|italic"
+                android:id="@+id/bToggle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
